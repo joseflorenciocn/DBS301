@@ -1,19 +1,19 @@
 -- Question 02
-SELECT TO_CHAR(sysdate + 1, 'Month ddth "of year" YYYY') AS "Tomorrow" 
-FROM dual;
+ SELECT TO_CHAR(sysdate + 1, 'Month ddth "of year" YYYY') AS "Tomorrow" 
+ FROM dual;
 
 -- Question 03
-SELECT last_name AS "Last Name",
+ SELECT last_name AS "Last Name",
        first_name AS "First Name",
        salary AS "Salary",
        (salary * 1.07) AS "Good Salary",
        (((salary * 1.07) - salary) * 12) AS "Annual Pay Increase"
-FROM employees
-WHERE department_id IN(20, 50, 60);
+ FROM employees
+ WHERE department_id IN(20, 50, 60);
 
 -- Question 04
-SELECT UPPER(last_name) || ', ' || UPPER(first_name) || ' is ' || 
-CASE job_id
+ SELECT UPPER(last_name) || ', ' || UPPER(first_name) || ' is ' || 
+ CASE job_id
     WHEN 'AC_ACCOUNT' THEN 'Accountant'
     WHEN 'AC_MGR' THEN 'Accounting Manager'
     WHEN 'AC_ASST' THEN 'Accounting Assistant'

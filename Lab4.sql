@@ -5,8 +5,8 @@ SELECT ROUND(AVG(salary) - MIN(salary), 2) AS "Real Amount"
 FROM employees;
 
 -- Question 02
--- 2 Display the department number and Highest, Lowest and Average pay per each department. Name these results High, Low and Avg.
--- Round the average
+-- 2 Display the department number and Highest, Lowest and Average pay per each department. 
+-- Name these results High, Low and Avg. Round the average
 -- Sort the output so that the department with highest average salary is shown first.
 SELECT NVL(department_id, 0) AS "Department Number",
        MAX(salary) AS "High",

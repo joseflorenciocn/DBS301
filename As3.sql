@@ -116,6 +116,7 @@ on (s.mgr_id = e.employee_id)
 --Q9
 select * from whs_sec_man_vu;
 
+
 drop table section;
 drop table warehouse;
 drop table division;
